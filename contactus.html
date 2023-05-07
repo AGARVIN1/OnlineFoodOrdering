@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDelivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        #contact-us {
+            background-color: #f5f5f5;
+
+  padding: 50px;
+ 
+
+}
+
+#contact-us h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#contact-us p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-us label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#contact-us input,
+#contact-us textarea {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#contact-us textarea {
+  resize: vertical;
+}
+
+#contact-us button[type="submit"] {
+  background-color: #f60;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-us button[type="submit"]:hover {
+  background-color: #e50;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="#">Food<span>Delivery</span></a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contactus.html" style="color:#ff0000;">Contact Us<hr style="color:#000000;"></a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <div class="auth-links">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback for us? Fill out the form below and we'll get back to you as soon as possible.</p>
+        <form method="post" action="/contactus">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Address:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <footer>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-skype"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <p>© FoodDelivery 2023</p><br>
+        <p>Phone no:9646723951</p><br>
+        <p>Developed by our team</p>
+        
+             </footer>
+</body>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>
